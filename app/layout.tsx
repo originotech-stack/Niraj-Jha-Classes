@@ -14,9 +14,9 @@ const bebas = Bebas_Neue({
 });
 
 export const metadata = {
-  title: "Niraj Jha Classes | Accounts & Economics Coaching Rohini Delhi",
+  title: "Niraj Jha Classes | Accounts Coaching Rohini Delhi",
   description:
-    "Accounts, Economics, B.ST and CUET coaching for Class 11 and 12 in Rohini, Delhi"
+    "Accounts coaching for Class 11 and 12 in Rohini, Delhi"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -37,8 +37,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
               </div>
               <p className="mt-4 text-sm text-slate-300 max-w-md">
-                Empowering commerce students with focused Accounts, Economics, B.ST
-                and CUET coaching to build strong fundamentals and top results.
+                Focused Accounts coaching to build strong fundamentals and top
+                results.
               </p>
               <div className="mt-5 flex gap-3">
                 <a
@@ -96,8 +96,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul className="mt-4 space-y-3 text-sm text-slate-200">
                 <li>Class XI Accounts</li>
                 <li>Class XII Accounts</li>
-                <li>Economics & B.ST</li>
-                <li>CUET Commerce</li>
+                <li>Board Exam Preparation</li>
+                <li>Concept + Practice Sessions</li>
               </ul>
             </div>
 
@@ -136,7 +136,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="border-t border-white/10">
             <div className="max-w-6xl mx-auto px-6 py-5 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-2">
               <span>© 2026 Niraj Jha Classes. All rights reserved.</span>
-              <span>Designed with care for commerce students.</span>
+              <span>
+                Designed by{" "}
+                <a
+                  href="https://originotech.com"
+                  className="underline hover:text-white"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Origino Tech
+                </a>
+              </span>
             </div>
           </div>
         </footer>

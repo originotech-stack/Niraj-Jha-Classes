@@ -55,7 +55,7 @@ export default function Contact() {
           />
           <input
             name="subject"
-            placeholder="Subject (Accounts / Economics / B.ST / CUET)"
+            placeholder="Subject (Accounts)"
             className="w-full border p-3 rounded-lg"
           />
           <textarea name="message" placeholder="Message" className="w-full border p-3 rounded-lg" rows={4} />

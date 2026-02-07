@@ -12,9 +12,8 @@ export default function Hero() {
             <span className="block text-teal-700">by Niraj Jha</span>
           </h1>
           <p className="mt-5 text-lg text-slate-700 max-w-xl">
-            Admission open for XI & XII. Focused coaching for Accounts, Economics,
-            B.ST and CUET with rigorous tests, intensive revision, and personal
-            mentoring.
+            Admission open for XI & XII. Focused Accounts coaching with rigorous
+            tests, intensive revision, and personal mentoring.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a

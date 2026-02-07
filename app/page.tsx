@@ -29,12 +29,12 @@ const programs = [
     detail: "Company accounts, partnership, and high-weightage problem practice."
   },
   {
-    title: "Economics + B.ST",
-    detail: "Concept clarity with focused revision and smart study plans."
+    title: "Board Exam Strategy",
+    detail: "Smart revision plans, PYQs, and exam-writing techniques."
   },
   {
-    title: "CUET Commerce",
-    detail: "Compact notes, high-yield MCQs, and timed mock series."
+    title: "Advanced Practice",
+    detail: "High-level problem sets with timed tests and feedback."
   }
 ];
 
@@ -50,7 +50,7 @@ export default function Home() {
               Admission Open
             </p>
             <h2 className="font-display text-4xl sm:text-5xl mt-3">
-              XI & XII Commerce Coaching
+              XI & XII Accounts Coaching
             </h2>
             <p className="mt-4 text-slate-700 text-lg">
               Learn with a structured plan: weekly tests, chapter-wise assignments,
