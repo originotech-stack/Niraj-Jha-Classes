@@ -21,21 +21,48 @@ const results = [
 
 const programs = [
   {
-    title: "Class XI Accounts",
-    detail: "Strong fundamentals, ledger mastery, and board-ready practice."
+    title: "Accounts",
+    detail: "Class XI & XII core concepts, ledger mastery, and board practice."
   },
   {
-    title: "Class XII Accounts",
-    detail: "Company accounts, partnership, and high-weightage problem practice."
+    title: "Business Studies",
+    detail: "Chapter-wise notes, case-based questions, and board strategy."
   },
   {
-    title: "Board Exam Strategy",
-    detail: "Smart revision plans, PYQs, and exam-writing techniques."
+    title: "Economics",
+    detail: "Concept clarity with numericals, diagrams, and revision plans."
   },
   {
-    title: "Advanced Practice",
-    detail: "High-level problem sets with timed tests and feedback."
+    title: "Mathematics",
+    detail: "Problem-solving focus with timed practice and doubt sessions."
+  },
+  {
+    title: "CUET Commerce",
+    detail: "Compact notes, high-yield MCQs, and mock tests."
+  },
+  {
+    title: "IPMAT & CLAT",
+    detail: "Aptitude prep with strategy, speed drills, and testing."
   }
+];
+
+const gallery = [
+  "/images/WhatsApp Image 2026-02-08 at 12.06.06 AM.jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.06 AM (1).jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.06 AM (2).jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.07 AM.jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.07 AM (1).jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.07 AM (2).jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.08 AM.jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.08 AM (1).jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.08 AM (2).jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.09 AM.jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.09 AM (1).jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.10 AM.jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.10 AM (1).jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.10 AM (2).jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.11 AM.jpeg",
+  "/images/WhatsApp Image 2026-02-08 at 12.06.11 AM (1).jpeg"
 ];
 
 export default function Home() {
@@ -120,7 +147,7 @@ export default function Home() {
             </p>
             <h2 className="font-display text-4xl mt-2">Accounts Toppers</h2>
             <p className="mt-3 text-slate-600">
-              Consistent board-level performance with 100s every year.
+              Consistent board-level performance with top scores every year.
             </p>
             <div className="mt-6 grid gap-2 text-sm text-slate-800">
               {results.slice(0, 8).map((item) => (
@@ -173,6 +200,37 @@ export default function Home() {
               <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--accent-2)]" />
               Online live classes on LG interactive panel
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
+                Gallery
+              </p>
+              <h2 className="font-display text-4xl mt-2">Classroom Highlights</h2>
+            </div>
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-[var(--accent-2)] text-black px-5 py-3 rounded-full font-semibold"
+            >
+              Visit the Center
+            </a>
+          </div>
+          <div className="mt-8 columns-1 sm:columns-2 lg:columns-3 gap-4">
+            {gallery.map((src) => (
+              <div key={src} className="mb-4 break-inside-avoid">
+                <img
+                  src={src}
+                  alt="Niraj Jha Classes gallery"
+                  className="w-full rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
+                  loading="lazy"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

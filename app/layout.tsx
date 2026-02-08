@@ -16,7 +16,7 @@ const bebas = Bebas_Neue({
 export const metadata = {
   title: "Niraj Jha Classes | Accounts Coaching Rohini Delhi",
   description:
-    "Accounts coaching for Class 11 and 12 in Rohini, Delhi"
+    "Accounts coaching for Class 11 and 12 in Rohini, Delhi by Niraj Jha"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -37,8 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
               </div>
               <p className="mt-4 text-sm text-slate-300 max-w-md">
-                Focused Accounts coaching to build strong fundamentals and top
-                results.
+                Accounts only coaching for Class XI & XII, taught by Niraj Jha.
               </p>
               <div className="mt-5 flex gap-3">
                 <a
@@ -94,10 +93,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 Courses
               </p>
               <ul className="mt-4 space-y-3 text-sm text-slate-200">
-                <li>Class XI Accounts</li>
-                <li>Class XII Accounts</li>
+                <li>Accounts, Maths, Economics, B.St</li>
+                <li>Class XI & XII Commerce</li>
+                <li>CUET, IPMAT & CLAT</li>
                 <li>Board Exam Preparation</li>
-                <li>Concept + Practice Sessions</li>
               </ul>
             </div>
 
