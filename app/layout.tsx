@@ -94,7 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </svg>
                 </a>
                 <a
-                  href="https://www.youtube.com/"
+                  href="https://www.youtube.com/channel/UCS-Fnpw95CBqg-WfnfCPWpw"
                   className="h-10 w-10 rounded-lg bg-[#FF0000] hover:opacity-90 flex items-center justify-center"
                   aria-label="YouTube"
                 >
@@ -103,7 +103,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/nirajjha.16/"
                   className="h-10 w-10 rounded-lg bg-[radial-gradient(circle_at_30%_110%,#fdf497_0%,#fdf497_5%,#fd5949_35%,#d6249f_60%,#285AEB_90%)] hover:opacity-90 flex items-center justify-center"
                   aria-label="Instagram"
                 >
@@ -120,7 +120,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9v-2.9h2.5V9.7c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5v1.8h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z" />
                   </svg>
                 </a>
-                <a
+                {/* <a
                   href="https://www.linkedin.com/"
                   className="h-10 w-10 rounded-lg bg-[#0A66C2] hover:opacity-90 flex items-center justify-center"
                   aria-label="LinkedIn"
@@ -128,7 +128,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <svg viewBox="0 0 24 24" className="h-5 w-5 fill-white" aria-hidden="true">
                     <path d="M20.4 20.4h-3.3v-5.2c0-1.2 0-2.7-1.7-2.7-1.7 0-2 1.3-2 2.6v5.3H10V9h3.2v1.5h.1c.4-.8 1.4-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.8v6.8ZM6.1 7.5a1.9 1.9 0 1 1 0-3.9 1.9 1.9 0 0 1 0 3.9Zm-1.7 12.9h3.3V9H4.4v11.4Z" />
                   </svg>
-                </a>
+                </a> */}
               </div>
             </div>
 
