@@ -21,16 +21,16 @@ const results = [
 
 const programs = [
   {
-    title: "Accounts",
-    detail: "Class XI & XII core concepts, ledger mastery, and board practice."
+    title: "Accounts (XI & XII)",
+    detail: "Core concepts, journal & ledger mastery, board-ready practice."
   },
   {
     title: "Business Studies",
-    detail: "Chapter-wise notes, case-based questions, and board strategy."
+    detail: "Case-based learning, chapter notes, and smart answer writing."
   },
   {
     title: "Economics",
-    detail: "Concept clarity with numericals, diagrams, and revision plans."
+    detail: "Concept clarity, numericals, diagrams, and revision plans."
   },
   {
     title: "Mathematics",
@@ -44,6 +44,15 @@ const programs = [
     title: "IPMAT & CLAT",
     detail: "Aptitude prep with strategy, speed drills, and testing."
   }
+];
+
+const highlights = [
+  "Small batches & individual attention",
+  "Handwritten notes + printed assignments",
+  "Weekly tests & mock tests",
+  "3 rounds of revision",
+  "SMS reporting system",
+  "Unlimited backup classes"
 ];
 
 const gallery = [
@@ -70,14 +79,14 @@ export default function Home() {
     <main>
       <Hero />
 
-      <section className="py-12 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-6xl mx-auto grid gap-6 lg:grid-cols-[1.2fr_0.8fr] items-center">
           <div className="glass rounded-3xl p-8">
             <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
               Admission Open
             </p>
             <h2 className="font-display text-4xl sm:text-5xl mt-3">
-              XI & XII Accounts Coaching
+              XI & XII Commerce Coaching
             </h2>
             <p className="mt-4 text-slate-700 text-lg">
               Learn with a structured plan: weekly tests, chapter-wise assignments,
@@ -112,14 +121,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 px-6 bg-white">
+      <section className="py-10 px-6">
+        <div className="max-w-6xl mx-auto grid gap-5 md:grid-cols-3">
+          {[
+            { stat: "15+ Years", label: "Teaching Experience" },
+            { stat: "100+ Toppers", label: "Board Results" },
+            { stat: "20-25", label: "Batch Strength" }
+          ].map((item) => (
+            <div key={item.label} className="glass rounded-2xl p-6 text-center">
+              <p className="font-display text-4xl">{item.stat}</p>
+              <p className="mt-2 text-sm text-slate-600">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="courses" className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
-                Programs
+                Courses
               </p>
-              <h2 className="font-display text-4xl mt-2">Courses Designed to Win</h2>
+              <h2 className="font-display text-4xl mt-2">All Commerce Subjects</h2>
             </div>
             <a
               href="/contact"
@@ -128,9 +152,12 @@ export default function Home() {
               Get the timetable
             </a>
           </div>
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {programs.map((program) => (
-              <div key={program.title} className="border rounded-2xl p-5">
+              <div
+                key={program.title}
+                className="border rounded-2xl p-5 hover:shadow-lg transition-shadow duration-300"
+              >
                 <h3 className="font-semibold text-lg">{program.title}</h3>
                 <p className="mt-2 text-sm text-slate-600">{program.detail}</p>
               </div>
@@ -140,6 +167,46 @@ export default function Home() {
       </section>
 
       <section className="py-12 px-6">
+        <div className="max-w-6xl mx-auto grid gap-6 lg:grid-cols-[1.1fr_0.9fr] items-start">
+          <div className="glass rounded-3xl p-8">
+            <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
+              Why Students Choose Us
+            </p>
+            <h2 className="font-display text-4xl mt-2">Structured + Supportive</h2>
+            <div className="mt-6 grid gap-3 text-sm text-slate-700">
+              {highlights.map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--accent)]" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-[var(--ink)] text-white rounded-3xl p-8">
+            <p className="text-xs uppercase tracking-[0.25em] text-slate-300">
+              Guidance
+            </p>
+            <h3 className="font-display text-3xl mt-3">Niraj Jha</h3>
+            <p className="mt-3 text-slate-300">
+              B.Com(H), M.Com (IGNOU), B.Ed (MDU). Trusted mentor for commerce
+              students with consistent results and strong fundamentals.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3 text-xs text-slate-200">
+              <span className="px-3 py-1.5 rounded-full bg-white/10">
+                Personal mentoring
+              </span>
+              <span className="px-3 py-1.5 rounded-full bg-white/10">
+                Parent updates
+              </span>
+              <span className="px-3 py-1.5 rounded-full bg-white/10">
+                Doubt sessions
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" className="py-12 px-6">
         <div className="max-w-6xl mx-auto grid gap-6 lg:grid-cols-[0.9fr_1.1fr] items-start">
           <div className="glass rounded-3xl p-8">
             <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
@@ -174,37 +241,29 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-center">
           <div>
             <p className="text-xs uppercase tracking-[0.25em] text-slate-300">
-              Why Choose Us
+              Testimonials
             </p>
-            <h2 className="font-display text-4xl mt-3">Personal, Structured, Proven</h2>
+            <h2 className="font-display text-4xl mt-3">Parents Love the Results</h2>
             <p className="mt-3 text-slate-300">
-              Notes, tests, and continuous mentoring keep students confident and
-              board-ready. Every batch is supported with backups and progress
-              tracking.
+              Consistent results and strong foundations built through structured
+              teaching and personal attention.
             </p>
           </div>
-          <div className="grid gap-3 text-sm text-slate-200">
-            <div className="flex items-start gap-3">
-              <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--accent-2)]" />
-              Handwritten notes + printed assignments
+          <div className="grid gap-4 text-sm text-slate-200">
+            <div className="bg-white/10 rounded-2xl p-4">
+              “Weekly tests and personal guidance helped my child stay confident.”
             </div>
-            <div className="flex items-start gap-3">
-              <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--accent-2)]" />
-              Weekly tests, mock tests, and cash prizes
+            <div className="bg-white/10 rounded-2xl p-4">
+              “Great notes and doubt clearing. Highly recommended for commerce.”
             </div>
-            <div className="flex items-start gap-3">
-              <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--accent-2)]" />
-              SMS reporting system for parents
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--accent-2)]" />
-              Online live classes on LG interactive panel
+            <div className="bg-white/10 rounded-2xl p-4">
+              “Structured revision and mock tests made board prep easy.”
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-12 px-6 bg-white">
+      <section id="gallery" className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
@@ -236,29 +295,56 @@ export default function Home() {
       </section>
 
       <section className="py-12 px-6">
-        <div className="max-w-6xl mx-auto glass rounded-3xl p-8 md:p-12 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] items-center">
-          <div>
-            <h2 className="font-display text-4xl sm:text-5xl">
-              Book a Demo Class
-            </h2>
-            <p className="mt-3 text-slate-700 text-lg">
-              Speak with our team to choose the right batch. Limited seats to keep
-              personal interaction strong.
-            </p>
+        <div className="max-w-6xl mx-auto grid gap-6 lg:grid-cols-2">
+          <div className="glass rounded-3xl p-8">
+            <p className="text-xs uppercase tracking-[0.25em] text-slate-500">FAQ</p>
+            <h2 className="font-display text-4xl mt-2">Common Questions</h2>
+            <div className="mt-6 grid gap-4 text-sm text-slate-700">
+              <div className="border rounded-2xl p-4">
+                <p className="font-semibold">Do you offer demo classes?</p>
+                <p className="mt-2 text-slate-600">
+                  Yes, demo sessions are available for new admissions.
+                </p>
+              </div>
+              <div className="border rounded-2xl p-4">
+                <p className="font-semibold">Are online classes available?</p>
+                <p className="mt-2 text-slate-600">
+                  Yes, online and offline batches are available.
+                </p>
+              </div>
+              <div className="border rounded-2xl p-4">
+                <p className="font-semibold">How are tests conducted?</p>
+                <p className="mt-2 text-slate-600">
+                  Weekly tests, mock tests, and revision assessments.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center bg-[var(--accent)] text-white px-6 py-3 rounded-full font-semibold"
-            >
-              Enquire on WhatsApp
-            </a>
-            <a
-              href="tel:+919873330978"
-              className="inline-flex items-center justify-center border border-slate-400 text-slate-900 px-6 py-3 rounded-full font-semibold"
-            >
-              Call 9873330978
-            </a>
+          <div className="bg-[var(--ink)] text-white rounded-3xl p-8">
+            <p className="text-xs uppercase tracking-[0.25em] text-slate-300">
+              Admission Support
+            </p>
+            <h3 className="font-display text-3xl mt-3">Talk to Us</h3>
+            <p className="mt-3 text-slate-300">
+              We will suggest the right batch and timeline based on your goals.
+            </p>
+            <div className="mt-6 flex flex-col gap-3">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center bg-[var(--accent)] text-white px-6 py-3 rounded-full font-semibold"
+              >
+                Enquire on WhatsApp
+              </a>
+              <a
+                href="tel:+919873330978"
+                className="inline-flex items-center justify-center border border-white/30 text-white px-6 py-3 rounded-full font-semibold"
+              >
+                Call 9873330978
+              </a>
+            </div>
+            <div className="mt-6 text-sm text-slate-300">
+              Sec-16 & Sec-9, Rohini • Limited seats
+            </div>
           </div>
         </div>
       </section>

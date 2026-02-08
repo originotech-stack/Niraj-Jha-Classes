@@ -16,20 +16,64 @@ const bebas = Bebas_Neue({
 export const metadata = {
   title: "Niraj Jha Classes | Accounts Coaching Rohini Delhi",
   description:
-    "Accounts coaching for Class 11 and 12 in Rohini, Delhi by Niraj Jha"
+    "Accounts coaching for Class 11 and 12 in Rohini, Delhi by Niraj Jha",
+  icons: {
+    icon: "/images/Logo njc.png"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${sora.variable} ${bebas.variable}`}>
+        <header className="sticky top-0 z-50 bg-[var(--paper)]/90 backdrop-blur border-b border-black/5">
+          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/" className="flex items-center gap-3">
+              <div className="h-10 w-10 rounded-full bg-white border border-black/10 overflow-hidden">
+                <img
+                  src="/images/Logo njc.png"
+                  alt="Niraj Jha Classes logo"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div>
+                <p className="font-display text-xl">Niraj Jha Classes</p>
+                <p className="text-xs text-slate-600">Rohini, Delhi</p>
+              </div>
+            </a>
+            <nav className="hidden md:flex items-center gap-6 text-sm text-slate-700">
+              <a href="/#courses" className="hover:text-black">
+                Courses
+              </a>
+              <a href="/#results" className="hover:text-black">
+                Results
+              </a>
+              <a href="/#gallery" className="hover:text-black">
+                Gallery
+              </a>
+              <a href="/contact" className="hover:text-black">
+                Contact
+              </a>
+            </nav>
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-[var(--accent)] text-white px-4 py-2 rounded-full text-sm font-semibold"
+            >
+              Enquire Now
+            </a>
+          </div>
+        </header>
         {children}
         <footer className="mt-16 bg-[#2c2c2c] text-white">
           <div className="max-w-6xl mx-auto px-6 py-12 grid gap-10 lg:grid-cols-[1.2fr_0.9fr_1.1fr]">
             <div>
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center font-display text-lg">
-                  NJ
+                <div className="h-12 w-12 rounded-full bg-white/10 overflow-hidden border border-white/10">
+                  <img
+                    src="/images/Logo njc.png"
+                    alt="Niraj Jha Classes logo"
+                    className="h-full w-full object-cover"
+                  />
                 </div>
                 <div>
                   <p className="font-display text-2xl">Niraj Jha Classes</p>

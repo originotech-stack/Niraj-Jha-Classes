@@ -2,18 +2,27 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(242,78,30,0.35),transparent_45%),radial-gradient(circle_at_bottom_right,rgba(13,107,122,0.35),transparent_40%)]" />
-      <div className="relative max-w-6xl mx-auto px-6 py-20 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
+      <div className="relative max-w-6xl mx-auto px-6 py-24 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
         <div>
-          <p className="text-sm uppercase tracking-[0.3em] text-teal-700">
-            Niraj Jha Classes
-          </p>
+          <div className="flex items-center gap-3">
+            <div className="h-12 w-12 rounded-full bg-white border border-black/10 overflow-hidden">
+              <img
+                src="/images/Logo njc.png"
+                alt="Niraj Jha Classes logo"
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <p className="text-sm uppercase tracking-[0.3em] text-teal-700">
+              Niraj Jha Classes
+            </p>
+          </div>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl mt-4 leading-[0.95]">
-            Accounts
+            Commerce
             <span className="block text-teal-700">by Niraj Jha</span>
           </h1>
           <p className="mt-5 text-lg text-slate-700 max-w-xl">
-            Admission open for XI & XII. Accounts only, taught by Niraj Jha with
-            rigorous tests, intensive revision, and personal mentoring.
+            Admission open for XI & XII. Complete Commerce coaching for Accounts,
+            Maths, Economics & Business Studies with CUET, IPMAT & CLAT prep.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -29,10 +38,22 @@ export default function Hero() {
               Call: 9999800978
             </a>
           </div>
+          <div className="mt-8 flex flex-wrap gap-3 text-xs text-slate-600">
+            {[
+              "Small batches",
+              "Weekly tests",
+              "3x revision",
+              "Notes + assignments"
+            ].map((item) => (
+              <span key={item} className="px-3 py-1.5 rounded-full bg-white border">
+                {item}
+              </span>
+            ))}
+          </div>
           <div className="mt-10 flex flex-wrap gap-6 text-sm text-slate-600">
             <div>
               <p className="font-semibold text-slate-900">100+</p>
-              <p>Top Scorers in Accounts</p>
+              <p>Top Scorers in Commerce</p>
             </div>
             <div>
               <p className="font-semibold text-slate-900">2 Centers</p>

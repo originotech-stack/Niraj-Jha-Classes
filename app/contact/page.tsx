@@ -23,6 +23,21 @@ export default function Contact() {
               <p>D-3/31, 1st Floor, Sec-16, Rohini</p>
               <p>220 (2nd Floor), SG Mall, DC Chowk, Rohini, Sec-9</p>
             </div>
+            <div className="mt-2">
+              <p className="font-semibold text-slate-900">Map</p>
+              <div className="mt-3 overflow-hidden rounded-2xl border">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6996.988438947321!2d77.12193359332574!3d28.734657702436262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01ad6f3269c7%3A0x4d7ae2ef383bfa41!2sNiraj%20Jha%20Classes!5e0!3m2!1sen!2sin!4v1770542748018!5m2!1sen!2sin"
+                  width="100%"
+                  height="280"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Niraj Jha Classes map"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
