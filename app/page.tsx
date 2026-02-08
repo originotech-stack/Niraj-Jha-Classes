@@ -128,7 +128,7 @@ export default function Home() {
             { stat: "100+ Toppers", label: "Board Results" },
             { stat: "20-25", label: "Batch Strength" }
           ].map((item) => (
-            <div key={item.label} className="glass rounded-2xl p-6 text-center">
+            <div key={item.label} className="glass rounded-2xl p-6 text-center interactive">
               <p className="font-display text-4xl">{item.stat}</p>
               <p className="mt-2 text-sm text-slate-600">{item.label}</p>
             </div>
@@ -147,17 +147,14 @@ export default function Home() {
             </div>
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[var(--accent-2)] text-black px-5 py-3 rounded-full font-semibold"
+              className="inline-flex items-center gap-2 bg-[var(--accent-2)] text-black px-5 py-3 rounded-full font-semibold focus-ring"
             >
               Get the timetable
             </a>
           </div>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {programs.map((program) => (
-              <div
-                key={program.title}
-                className="border rounded-2xl p-5 hover:shadow-lg transition-shadow duration-300"
-              >
+              <div key={program.title} className="border rounded-2xl p-5 interactive">
                 <h3 className="font-semibold text-lg">{program.title}</h3>
                 <p className="mt-2 text-sm text-slate-600">{program.detail}</p>
               </div>
@@ -229,7 +226,7 @@ export default function Home() {
 
           <div className="grid gap-4 sm:grid-cols-2">
             {results.slice(8).map((item) => (
-              <div key={item} className="border rounded-2xl p-4 bg-white">
+              <div key={item} className="border rounded-2xl p-4 bg-white interactive">
                 <p className="font-semibold text-slate-800">{item}</p>
               </div>
             ))}
@@ -250,13 +247,13 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-4 text-sm text-slate-200">
-            <div className="bg-white/10 rounded-2xl p-4">
+            <div className="bg-white/10 rounded-2xl p-4 interactive">
               “Weekly tests and personal guidance helped my child stay confident.”
             </div>
-            <div className="bg-white/10 rounded-2xl p-4">
+            <div className="bg-white/10 rounded-2xl p-4 interactive">
               “Great notes and doubt clearing. Highly recommended for commerce.”
             </div>
-            <div className="bg-white/10 rounded-2xl p-4">
+            <div className="bg-white/10 rounded-2xl p-4 interactive">
               “Structured revision and mock tests made board prep easy.”
             </div>
           </div>
@@ -274,7 +271,7 @@ export default function Home() {
             </div>
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[var(--accent-2)] text-black px-5 py-3 rounded-full font-semibold"
+              className="inline-flex items-center gap-2 bg-[var(--accent-2)] text-black px-5 py-3 rounded-full font-semibold focus-ring"
             >
               Visit the Center
             </a>
@@ -285,7 +282,7 @@ export default function Home() {
                 <img
                   src={src}
                   alt="Niraj Jha Classes gallery"
-                  className="w-full rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
+                  className="w-full rounded-2xl shadow-md interactive"
                   loading="lazy"
                 />
               </div>
@@ -300,19 +297,19 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[0.25em] text-slate-500">FAQ</p>
             <h2 className="font-display text-4xl mt-2">Common Questions</h2>
             <div className="mt-6 grid gap-4 text-sm text-slate-700">
-              <div className="border rounded-2xl p-4">
+              <div className="border rounded-2xl p-4 interactive">
                 <p className="font-semibold">Do you offer demo classes?</p>
                 <p className="mt-2 text-slate-600">
                   Yes, demo sessions are available for new admissions.
                 </p>
               </div>
-              <div className="border rounded-2xl p-4">
+              <div className="border rounded-2xl p-4 interactive">
                 <p className="font-semibold">Are online classes available?</p>
                 <p className="mt-2 text-slate-600">
                   Yes, online and offline batches are available.
                 </p>
               </div>
-              <div className="border rounded-2xl p-4">
+              <div className="border rounded-2xl p-4 interactive">
                 <p className="font-semibold">How are tests conducted?</p>
                 <p className="mt-2 text-slate-600">
                   Weekly tests, mock tests, and revision assessments.
@@ -331,19 +328,19 @@ export default function Home() {
             <div className="mt-6 flex flex-col gap-3">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[var(--accent)] text-white px-6 py-3 rounded-full font-semibold"
+                className="inline-flex items-center justify-center bg-[var(--accent)] text-white px-6 py-3 rounded-full font-semibold focus-ring"
               >
                 Enquire on WhatsApp
               </a>
               <a
                 href="tel:+919873330978"
-                className="inline-flex items-center justify-center border border-white/30 text-white px-6 py-3 rounded-full font-semibold"
+                className="inline-flex items-center justify-center border border-white/30 text-white px-6 py-3 rounded-full font-semibold focus-ring"
               >
                 Call 9873330978
               </a>
             </div>
             <div className="mt-6 text-sm text-slate-300">
-              Sec-16 & Sec-9, Rohini • Limited seats
+              Sec-16 & Sec-9, Rohini - Limited seats
             </div>
           </div>
         </div>

@@ -27,13 +27,13 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[var(--accent)] text-white px-6 py-3 rounded-full font-semibold"
+              className="inline-flex items-center gap-2 bg-[var(--accent)] text-white px-6 py-3 rounded-full font-semibold focus-ring"
             >
               Enroll via WhatsApp
             </a>
             <a
               href="tel:+919999800978"
-              className="inline-flex items-center gap-2 border border-slate-400 text-slate-900 px-6 py-3 rounded-full font-semibold"
+              className="inline-flex items-center gap-2 border border-slate-400 text-slate-900 px-6 py-3 rounded-full font-semibold focus-ring"
             >
               Call: 9999800978
             </a>
@@ -66,7 +66,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="glass rounded-3xl p-6 sm:p-8">
+        <div className="glass rounded-3xl p-6 sm:p-8 interactive">
           <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
             Why Choose Us
           </p>

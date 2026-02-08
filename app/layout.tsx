@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${sora.variable} ${bebas.variable}`}>
         <header className="sticky top-0 z-50 bg-[var(--paper)]/90 backdrop-blur border-b border-black/5">
           <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-3">
+            <a href="/" className="flex items-center gap-3 focus-ring rounded-xl">
               <div className="h-10 w-10 rounded-full bg-white border border-black/10 overflow-hidden">
                 <img
                   src="/images/Logo njc.png"
@@ -42,22 +42,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
             </a>
             <nav className="hidden md:flex items-center gap-6 text-sm text-slate-700">
-              <a href="/#courses" className="hover:text-black">
+              <a href="/#courses" className="hover:text-black focus-ring rounded-md px-1">
                 Courses
               </a>
-              <a href="/#results" className="hover:text-black">
+              <a href="/#results" className="hover:text-black focus-ring rounded-md px-1">
                 Results
               </a>
-              <a href="/#gallery" className="hover:text-black">
+              <a href="/#gallery" className="hover:text-black focus-ring rounded-md px-1">
                 Gallery
               </a>
-              <a href="/contact" className="hover:text-black">
+              <a href="/contact" className="hover:text-black focus-ring rounded-md px-1">
                 Contact
               </a>
             </nav>
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[var(--accent)] text-white px-4 py-2 rounded-full text-sm font-semibold"
+              className="inline-flex items-center gap-2 bg-[var(--accent)] text-white px-4 py-2 rounded-full text-sm font-semibold focus-ring"
             >
               Enquire Now
             </a>

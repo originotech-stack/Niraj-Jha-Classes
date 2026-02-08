@@ -59,23 +59,38 @@ export default function Contact() {
           className="bg-white rounded-3xl p-8 shadow-lg space-y-4"
         >
           <div className="grid gap-4 sm:grid-cols-2">
-            <input name="name" placeholder="Student Name" className="w-full border p-3 rounded-lg" required />
-            <input name="class" placeholder="Class (XI / XII)" className="w-full border p-3 rounded-lg" required />
+            <input
+              name="name"
+              placeholder="Student Name"
+              className="w-full border p-3 rounded-lg focus-ring"
+              required
+            />
+            <input
+              name="class"
+              placeholder="Class (XI / XII)"
+              className="w-full border p-3 rounded-lg focus-ring"
+              required
+            />
           </div>
           <input
             name="phone"
             placeholder="Phone / WhatsApp Number"
-            className="w-full border p-3 rounded-lg"
+            className="w-full border p-3 rounded-lg focus-ring"
             required
           />
           <input
             name="subject"
             placeholder="Subject (Accounts)"
-            className="w-full border p-3 rounded-lg"
+            className="w-full border p-3 rounded-lg focus-ring"
           />
-          <textarea name="message" placeholder="Message" className="w-full border p-3 rounded-lg" rows={4} />
+          <textarea
+            name="message"
+            placeholder="Message"
+            className="w-full border p-3 rounded-lg focus-ring"
+            rows={4}
+          />
 
-          <button className="bg-[var(--accent)] text-white px-6 py-3 rounded-full font-semibold w-full">
+          <button className="bg-[var(--accent)] text-white px-6 py-3 rounded-full font-semibold w-full focus-ring">
             Enquire on WhatsApp
           </button>
         </form>
