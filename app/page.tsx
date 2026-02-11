@@ -50,6 +50,7 @@ const highlights = [
   "Small batches & individual attention",
   "Handwritten notes + printed assignments",
   "Weekly tests & mock tests",
+  "Board Before Board mock examinations",
   "3 rounds of revision",
   "SMS reporting system",
   "Unlimited backup classes"
@@ -71,7 +72,13 @@ const gallery = [
   "/images/WhatsApp Image 2026-02-08 at 12.06.10 AM (1).jpeg",
   "/images/WhatsApp Image 2026-02-08 at 12.06.10 AM (2).jpeg",
   "/images/WhatsApp Image 2026-02-08 at 12.06.11 AM.jpeg",
-  "/images/WhatsApp Image 2026-02-08 at 12.06.11 AM (1).jpeg"
+  "/images/WhatsApp Image 2026-02-08 at 12.06.11 AM (1).jpeg",
+  "/images/WhatsApp Image 2026-02-11 at 10.26.49 PM.jpeg",
+  "/images/WhatsApp Image 2026-02-11 at 10.26.50 PM.jpeg",
+  "/images/WhatsApp Image 2026-02-11 at 10.26.50 PM (1).jpeg",
+  "/images/WhatsApp Image 2026-02-11 at 10.26.50 PM (2).jpeg",
+  "/images/WhatsApp Image 2026-02-11 at 10.26.51 PM.jpeg",
+  "/images/WhatsApp Image 2026-02-11 at 10.26.51 PM (1).jpeg"
 ];
 
 export default function Home() {
@@ -125,7 +132,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid gap-5 md:grid-cols-3">
           {[
             { stat: "15+ Years", label: "Teaching Experience" },
-            { stat: "100+ Toppers", label: "Board Results" },
+            { stat: "250+ Toppers", label: "Board Results" },
             { stat: "20-25", label: "Batch Strength" }
           ].map((item) => (
             <div key={item.label} className="glass rounded-2xl p-6 text-center interactive">
@@ -234,28 +241,80 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 px-6 bg-[var(--ink)] text-white">
-        <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-center">
+      <section className="py-14 px-6 bg-[var(--ink)] text-white">
+        <div className="max-w-6xl mx-auto grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-start">
           <div>
             <p className="text-xs uppercase tracking-[0.25em] text-slate-300">
               Testimonials
             </p>
-            <h2 className="font-display text-4xl mt-3">Parents Love the Results</h2>
-            <p className="mt-3 text-slate-300">
+            <h2 className="font-display text-4xl sm:text-5xl mt-3">
+              Parents Love the Results
+            </h2>
+            <p className="mt-4 text-slate-300 max-w-lg">
               Consistent results and strong foundations built through structured
               teaching and personal attention.
             </p>
+            <div className="mt-6 flex items-center gap-3 text-sm text-slate-300">
+              <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2">
+                <span className="text-yellow-300">★★★★★</span>
+                <span>Google Reviews</span>
+              </span>
+            </div>
           </div>
-          <div className="grid gap-4 text-sm text-slate-200">
-            <div className="bg-white/10 rounded-2xl p-4 interactive">
-              “Weekly tests and personal guidance helped my child stay confident.”
-            </div>
-            <div className="bg-white/10 rounded-2xl p-4 interactive">
-              “Great notes and doubt clearing. Highly recommended for commerce.”
-            </div>
-            <div className="bg-white/10 rounded-2xl p-4 interactive">
-              “Structured revision and mock tests made board prep easy.”
-            </div>
+          <div className="flex gap-4 text-sm text-slate-200 overflow-x-auto snap-x snap-mandatory pb-2">
+            {[
+              {
+                name: "Abhishek Asiwal",
+                rating: 5,
+                time: "3 weeks ago",
+                text:
+                  "The classes are well-organized and engaging. Teachers are highly knowledgeable, friendly, and always ready to help. They explain concepts clearly and encourage students to do their best. Learning here is a great experience."
+              },
+              {
+                name: "Vidita Kotiyal",
+                rating: 5,
+                time: "",
+                text:
+                  "My tuition teacher is absolutely amazing! Super smart, fun, and really good at explaining things in a simple way. Classes are never boring — they’re interactive, clear, and actually enjoyable. I’ve learned a lot and feel way more confident now. Honestly, one of the best teachers I’ve had. Highly recommend!"
+              },
+              {
+                name: "Daksh Rana",
+                rating: 5,
+                time: "Edited 7 months ago",
+                text:
+                  "Niraj Sir explains concepts clearly, making even complex topics easy to understand. Their teaching style is engaging, and they ensure every student grasps the fundamentals. With their guidance, learning accounts feels both structured and enjoyable. Good to be a part of Niraj Jha Classes."
+              }
+            ].map((review) => (
+              <div
+                key={review.name}
+                className="bg-gradient-to-br from-white/15 to-white/5 rounded-2xl p-5 border border-white/10 interactive min-w-[280px] sm:min-w-[360px] snap-start"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-white/15 flex items-center justify-center text-sm font-semibold">
+                    {review.name
+                      .split(" ")
+                      .map((part) => part[0])
+                      .slice(0, 2)
+                      .join("")}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-white">{review.name}</p>
+                    <div className="flex items-center gap-2 text-xs text-slate-300">
+                      <span className="text-yellow-300">
+                        {"★".repeat(review.rating)}
+                        <span className="text-slate-500">
+                          {"★".repeat(5 - review.rating)}
+                        </span>
+                      </span>
+                      {review.time ? <span>• {review.time}</span> : null}
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4 text-slate-200 leading-relaxed">
+                  “{review.text}”
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
