@@ -153,17 +153,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <span className="h-9 w-9 rounded-lg bg-white/10 flex items-center justify-center">
                     📍
                   </span>
-                  <p>
-                    D-3/31, 1st Floor, Sec-16, Rohini
-                    <br />
-                    220 (2nd Floor), SG Mall, DC Chowk, Rohini, Sec-9
-                  </p>
+                  <div className="space-y-2">
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=D-3/31,+1st+Floor,+Sec-16,+Rohini,+Delhi"
+                      className="underline hover:text-white"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      D-3/31, 1st Floor, Sec-16, Rohini
+                    </a>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=220+(2nd+Floor),+SG+Mall,+DC+Chowk,+Rohini,+Sec-9,+Delhi"
+                      className="underline hover:text-white block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      220 (2nd Floor), SG Mall, DC Chowk, Rohini, Sec-9
+                    </a>
+                  </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="h-9 w-9 rounded-lg bg-white/10 flex items-center justify-center">
                     📞
                   </span>
-                  <p>+91 99998 00978, +91 98733 30978</p>
+                  <div className="space-y-1">
+                    <a href="tel:+919999800978" className="underline hover:text-white">
+                      +91 99998 00978
+                    </a>
+                    <a href="tel:+919873330978" className="underline hover:text-white">
+                      +91 98733 30978
+                    </a>
+                  </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="h-9 w-9 rounded-lg bg-white/10 flex items-center justify-center">
