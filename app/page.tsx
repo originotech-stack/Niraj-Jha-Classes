@@ -57,7 +57,7 @@ const highlights = [
 ];
 
 const gallery = [
-  "/images/WhatsApp Image 2026-02-08 at 12.06.06 AM.jpeg",
+  // "/images/WhatsApp Image 2026-02-08 at 12.06.06 AM.jpeg",
   "/images/WhatsApp Image 2026-02-08 at 12.06.06 AM (1).jpeg",
   "/images/WhatsApp Image 2026-02-08 at 12.06.06 AM (2).jpeg",
   "/images/WhatsApp Image 2026-02-08 at 12.06.07 AM.jpeg",
@@ -140,7 +140,7 @@ export default function Home() {
             <h3 className="font-display text-3xl mt-3">Rohini Locations</h3>
             <ul className="mt-5 space-y-3 text-slate-200">
               <li>D-3/31, 1st Floor, Sec-16, Rohini</li>
-              <li>220 (2nd Floor), SG Mall, DC Chowk, Rohini, Sec-9</li>
+              <li>220 (2nd Floor), SG Mall, DC Chowk, Sec-9,Rohini</li>
             </ul>
             <div className="mt-6 text-slate-300 text-sm">Call/WhatsApp: 9999800978, 9873330978</div>
           </div>

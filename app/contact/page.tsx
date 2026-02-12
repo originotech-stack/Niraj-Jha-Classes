@@ -26,18 +26,42 @@ export default function Contact() {
             </div>
 
             <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Map</p>
-              <div className="mt-3 overflow-hidden rounded-2xl border border-slate-200 shadow-md">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6996.988438947321!2d77.12193359332574!3d28.734657702436262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01ad6f3269c7%3A0x4d7ae2ef383bfa41!2sNiraj%20Jha%20Classes!5e0!3m2!1sen!2sin!4v1770542748018!5m2!1sen!2sin"
-                  width="100%"
-                  height="280"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Niraj Jha Classes map"
-                />
+              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Maps</p>
+              <div className="mt-3 grid gap-4 sm:grid-cols-2">
+                <div>
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-600">
+                    Sec-16 Center
+                  </p>
+                  <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-md">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13993.493053251656!2d77.1129344!3d28.73827055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01ad6f3269c7%3A0x4d7ae2ef383bfa41!2sNiraj%20Jha%20Classes!5e0!3m2!1sen!2sin!4v1770913671090!5m2!1sen!2sin"
+                      width="100%"
+                      height="220"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Map for Sec-16 Rohini center"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-600">
+                    Sec-9 Center
+                  </p>
+                  <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-md">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6998.120673342775!2d77.11647268384692!3d28.717742783827926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01c4548a96cd%3A0xdcebac7f2eb8a27e!2sNiraj%20Jha%20Classes!5e0!3m2!1sen!2sin!4v1770913771512!5m2!1sen!2sin"
+                      width="100%"
+                      height="220"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Map for Sec-9 Rohini center"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
