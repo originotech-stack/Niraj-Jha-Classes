@@ -1,95 +1,71 @@
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(242,78,30,0.25),transparent_45%),radial-gradient(circle_at_bottom_right,rgba(13,107,122,0.25),transparent_40%)]" />
-      <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-[rgba(242,78,30,0.08)] blur-3xl" />
-      <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-[rgba(13,107,122,0.12)] blur-3xl" />
-      <div className="relative max-w-6xl mx-auto px-6 py-24 grid gap-12 lg:grid-cols-[1.05fr_0.95fr] items-center">
+    <section className="relative overflow-hidden mesh">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,90,42,0.24),transparent_45%),radial-gradient(circle_at_bottom_right,rgba(15,118,110,0.25),transparent_40%)]" />
+      <div className="absolute -top-28 -left-20 h-80 w-80 rounded-full bg-[rgba(255,90,42,0.14)] blur-3xl" />
+      <div className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-[rgba(15,118,110,0.18)] blur-3xl" />
+
+      <div className="relative max-w-6xl mx-auto px-6 py-20 sm:py-24 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] items-center">
         <div>
-          <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-full bg-white border border-black/10 overflow-hidden shadow-sm">
-              <img
-                src="/images/Logo njc.png"
-                alt="Niraj Jha Classes logo"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <p className="text-xs uppercase tracking-[0.35em] text-teal-700">
-              Niraj Jha Classes
-            </p>
+          <div className="inline-flex items-center gap-3 rounded-full border border-black/10 bg-white/80 px-4 py-2 text-xs uppercase tracking-[0.3em] text-teal-700">
+            <span className="h-2 w-2 rounded-full bg-[var(--accent)]" />
+            Admission Open 2026
           </div>
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl mt-6 leading-[0.95]">
-            Niraj Jha
+
+          <h1 className="section-title text-5xl sm:text-6xl lg:text-7xl mt-6">
+            Commerce Coaching
+            <span className="block text-[var(--accent)]">That Delivers Results</span>
           </h1>
-          <p className="mt-5 text-lg text-slate-700 max-w-xl">
-            Admission open for XI & XII. Complete Commerce coaching for Accounts,
-            Maths, Economics & Business Studies with CUET, IPMAT & CLAT prep.
+
+          <p className="mt-5 text-lg text-slate-700 max-w-xl leading-relaxed">
+            Accounts, Economics, Business Studies, and Maths with weekly tests, board-level answer writing,
+            and revision systems designed to improve marks fast.
           </p>
+
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[var(--accent)] text-white px-6 py-3 rounded-full font-semibold focus-ring shadow-md"
+              className="btn-primary inline-flex items-center gap-2 rounded-full px-6 py-3 font-semibold focus-ring"
             >
-              Enroll via WhatsApp
+              Start Your Enquiry
             </a>
             <a
               href="tel:+919999800978"
-              className="inline-flex items-center gap-2 border border-slate-300 bg-white/70 text-slate-900 px-6 py-3 rounded-full font-semibold focus-ring"
+              className="btn-secondary inline-flex items-center gap-2 rounded-full px-6 py-3 font-semibold focus-ring"
             >
-              Call: 9999800978
+              Call 9999800978
             </a>
           </div>
-          <div className="mt-8 flex flex-wrap gap-3 text-xs text-slate-600">
-            {[
-              "Small batches",
-              "Weekly tests",
-              "3x revision",
-              "Notes + assignments"
-            ].map((item) => (
-              <span
-                key={item}
-                className="px-3 py-1.5 rounded-full bg-white/80 border border-black/5 shadow-sm"
-              >
+
+          <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-slate-700">
+            {["Small batches", "Weekly tests", "3 revision rounds", "Notes included"].map((item) => (
+              <div key={item} className="rounded-xl border border-black/10 bg-white/80 px-3 py-2 text-center">
                 {item}
-              </span>
+              </div>
             ))}
-          </div>
-          <div className="mt-10 flex flex-wrap gap-6 text-sm text-slate-600">
-            <div>
-              <p className="font-semibold text-slate-900">100+</p>
-              <p>Top Scorers in Commerce</p>
-            </div>
-            <div>
-              <p className="font-semibold text-slate-900">2 Centers</p>
-              <p>Sec-16 & Sec-9, Rohini</p>
-            </div>
-            <div>
-              <p className="font-semibold text-slate-900">Small Batches</p>
-              <p>Individual attention</p>
-            </div>
           </div>
         </div>
 
-        <div className="glass rounded-3xl p-7 sm:p-8 interactive">
-          <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
-            Why Choose Us
-          </p>
+        <div className="glass rounded-3xl p-7 sm:p-8 interactive relative overflow-hidden">
+          <div className="absolute -right-14 -top-14 h-36 w-36 rounded-full bg-[var(--accent)]/10 blur-2xl" />
+          <p className="text-xs uppercase tracking-[0.32em] text-slate-500">Why Choose Us</p>
           <ul className="mt-5 grid gap-4 text-slate-800">
             {[
-              "Handwritten notes + printed assignments for every chapter",
-              "Weekly tests, mock tests & motivational cash prizes",
-              "3 rounds of revision + unlimited backup classes",
-              "Online/Offline classes + SMS reporting system"
+              "Handwritten notes and printed assignments for every chapter",
+              "Weekly tests, mock tests, and performance tracking",
+              "Three rounds of revision before final exams",
+              "Online and offline batches with unlimited backup classes"
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--accent)]" />
-                {item}
+                <span className="leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
-          <div className="mt-6 border-t border-slate-200 pt-5 text-sm text-slate-600">
-            <p className="font-semibold text-slate-900">B.Com(H), M.Com (IGNOU), B.Ed (MDU)</p>
-            <p>Guided learning with personal interaction.</p>
+
+          <div className="mt-6 border-t border-slate-200 pt-5 text-sm text-slate-700">
+            <p className="font-semibold text-slate-900">Mentor: Niraj Jha (B.Com H, M.Com, B.Ed)</p>
+            <p>Focused guidance with consistent academic outcomes.</p>
           </div>
         </div>
       </div>
