@@ -150,7 +150,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div>
                   <p className="font-semibold text-white">Locations</p>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=D-3/31,+1st+Floor,+Sec-16,+Rohini,+Delhi"
+                    href="https://maps.app.goo.gl/ctAkC2Fsj3nbEjg28"
                     className="underline underline-offset-4 hover:text-white block mt-1"
                     target="_blank"
                     rel="noreferrer"
@@ -158,7 +158,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     D-3/31, 1st Floor, Sec-16, Rohini
                   </a>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=220+(2nd+Floor),+SG+Mall,+DC+Chowk,+Rohini,+Sec-9,+Delhi"
+                    href="https://maps.app.goo.gl/PnqRGSCPYMuCLvHBA"
                     className="underline underline-offset-4 hover:text-white block"
                     target="_blank"
                     rel="noreferrer"
