@@ -1,8 +1,8 @@
 import Hero from "../components/Hero";
 
 const results = [
-  "Krishika Arora - 100 (St. Angel's School)",
-  "Mishti Gupta - 100 (St. Angel's School)",
+  "Krishika Arora - 100 ",
+  "Mishti Gupta - 100 ",
   "Sparsh Gupta - 100",
   "Divyansh Garg - 100",
   "Lakshay Lamba - 100",
@@ -222,7 +222,7 @@ export default function Home() {
       <section id="results" className="py-12 px-6">
         <div className="max-w-6xl mx-auto grid gap-6 lg:grid-cols-[0.9fr_1.1fr] items-start">
           <div className="glass rounded-3xl p-8 interactive">
-            <p className="text-xs uppercase tracking-[0.25em] text-slate-500">Results 2023-24</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-slate-500">Results</p>
             <h2 className="section-title text-4xl mt-2">Accounts Toppers</h2>
             <p className="mt-3 text-slate-600">Consistent board-level performance with top scores every year.</p>
             <div className="mt-6 grid gap-2 text-sm text-slate-800">
