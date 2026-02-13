@@ -149,6 +149,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="mt-4 space-y-4 text-sm text-slate-200">
                 <div>
                   <p className="font-semibold text-white">Locations</p>
+                  <p className="mt-1 text-xs uppercase tracking-[0.16em] text-slate-400">Branch 1</p>
                   <a
                     href="https://maps.app.goo.gl/ctAkC2Fsj3nbEjg28"
                     className="underline underline-offset-4 hover:text-white block mt-1"
@@ -157,6 +158,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   >
                     D-3/31, 1st Floor, Sec-16, Rohini
                   </a>
+                  <p className="mt-2 text-xs uppercase tracking-[0.16em] text-slate-400">Branch 2</p>
                   <a
                     href="https://maps.app.goo.gl/PnqRGSCPYMuCLvHBA"
                     className="underline underline-offset-4 hover:text-white block"

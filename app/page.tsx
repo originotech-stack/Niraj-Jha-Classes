@@ -139,8 +139,14 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[0.25em] text-slate-300">Centers</p>
             <h3 className="font-display text-3xl mt-3">Rohini Locations</h3>
             <ul className="mt-5 space-y-3 text-slate-200">
-              <li>D-3/31, 1st Floor, Sec-16, Rohini</li>
-              <li>220 (2nd Floor), SG Mall, DC Chowk, Sec-9,Rohini</li>
+              <li>
+                <span className="text-slate-400 text-xs uppercase tracking-[0.16em]">Branch 1:</span>{" "}
+                D-3/31, 1st Floor, Sec-16, Rohini
+              </li>
+              <li>
+                <span className="text-slate-400 text-xs uppercase tracking-[0.16em]">Branch 2:</span>{" "}
+                220 (2nd Floor), SG Mall, DC Chowk, Sec-9, Rohini
+              </li>
             </ul>
             <div className="mt-6 text-slate-300 text-sm">Call/WhatsApp: 9999800978, 9873330978</div>
           </div>

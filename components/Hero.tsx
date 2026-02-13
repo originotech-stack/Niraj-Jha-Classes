@@ -9,11 +9,11 @@ export default function Hero() {
         <div>
           <div className="inline-flex items-center gap-3 rounded-full border border-black/10 bg-white/80 px-4 py-2 text-xs uppercase tracking-[0.3em] text-teal-700">
             <span className="h-2 w-2 rounded-full bg-[var(--accent)]" />
-            Admission Open 2026
+            Admission Open 2026-2027
           </div>
 
           <h1 className="section-title text-5xl sm:text-6xl lg:text-7xl mt-6">
-            Commerce Coaching
+            Niraj Jha Classes
             <span className="block text-[var(--accent)]">That Delivers Results</span>
           </h1>
 
